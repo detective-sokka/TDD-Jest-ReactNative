@@ -1,5 +1,9 @@
+import React from "react";
+import { render } from "@testing-library/react-native";
+import Counter from "./Counter";
+
 describe("Counter", () => {
-    it("1 + 1 should equals 2", () => {
-      expect(1 + 1).toEqual(2);
+    it("renders correctly", () => {
+      render(<Counter/>);
     });
 });
